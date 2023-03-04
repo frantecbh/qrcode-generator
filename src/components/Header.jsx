@@ -57,7 +57,7 @@ export function Header() {
 
             ].map(([title, url]) => (
 
-              <a key={title} href={url} className="py-5 px-3 text-gray-700">{title === 'Linkedin' ? <BsLinkedin size={24} color='#fff' /> : <BsGithub size={24} color='#fff' />  }</a>
+              <a key={title} href={url} target="_blank" className="py-5 px-3 text-gray-700">{title === 'Linkedin' ? <BsLinkedin size={24} color='#fff' /> : <BsGithub size={24} color='#fff' />  }</a>
 
             ))}
             {/* <a href="#" className="py-2 px-3 text-gray-700 hover:bg-yellow-300 bg-yellow-400 text-yellow-900 hover:text-white rounded transition duration-300">Singup</a> */}
@@ -87,7 +87,7 @@ export function Header() {
         ].map(([title, url]) => (
 
             
-            <a key={title} href={url} className="block py-2 px-4 text-sm hover:bg-gray-300 rounded">{title === 'Linkedin' ? <BsLinkedin size={24} color='#fff' /> : <BsGithub size={24} color='#fff' />  }</a>
+            <a key={title} href={url} target="_blank" className="block py-2 px-4 text-sm hover:bg-gray-300 rounded">{title === 'Linkedin' ? <BsLinkedin size={24} color='#fff' /> : <BsGithub size={24} color='#fff' />  }</a>
 
         ))}
       </div>
